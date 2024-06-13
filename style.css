@@ -23,6 +23,7 @@ body {
     display: flex;
     min-height: 100vh;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 img {
@@ -70,6 +71,7 @@ nav a:hover {
     display: flex;
     gap: 125px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .head>div {
@@ -128,9 +130,22 @@ h1 {
     border-radius: 20px;
 }
 
+.head:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 50%;
+    background-color: #E8EFF2;
+    border-radius: 20px;
+    top: 0;
+    right: calc(-100vw - 30px);
+}
+
 .description {
     display: flex;
     margin-bottom: 168px;
+    position: relative;
 }
 
 .description div:first-child {
@@ -156,6 +171,18 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.description:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 50%;
+    background-color: #E8EFF2;
+    border-radius: 20px;
+    bottom: 0;
+    left: calc(-100vw - 30px);
 }
 
 .description h2 {
