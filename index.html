@@ -11,6 +11,7 @@
       href="./assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   </head>
   <body>
@@ -32,18 +33,24 @@
           </div>
         </div>
         <div>
-          <img src="./assets/desktop/image-keyboard.jpg" alt="image-keyboard" />
+          <img
+            id="imgKeyboard"
+            src="./assets/desktop/image-keyboard.jpg"
+            alt="image-keyboard"
+          />
         </div>
       </section>
       <section class="description">
         <div>
           <img
+            id="imgPhoneKeyboard"
             src="./assets/desktop/image-phone-and-keyboard.jpg"
             alt="image-phone-and-keyboard"
           />
         </div>
         <div>
           <img
+            id="imgGlassKeyboard"
             src="./assets/desktop/image-glass-and-keyboard.jpg"
             alt="image-glass-and-keyboard"
           />
@@ -114,9 +121,5 @@
         Reserved
       </footer>
     </div>
-    <script>
-      var d = new Date();
-      year.innerHTML = d.getFullYear();
-    </script>
   </body>
 </html>

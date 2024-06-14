@@ -34,6 +34,7 @@ img {
 .container {
     width: 100%;
     max-width: 1110px;
+    overflow-x: hidden;
 }
 
 nav {
@@ -146,12 +147,12 @@ h1 {
     display: flex;
     margin-bottom: 168px;
     position: relative;
+    gap: 30px;
 }
 
 .description div:first-child {
     background-color: #f16818;
     border-radius: 20px;
-    margin-right: 30px;
 }
 
 .description div:first-child img {
@@ -251,4 +252,84 @@ footer {
 
 footer span {
     font-family: Barlow-Bold;
+}
+
+@media (max-width: 769px) {
+    nav {
+        padding: 40px;
+        margin-bottom: 62px;
+    }
+
+    .head {
+        padding-left: 40px;
+        gap: 70px;
+    }
+
+    .head h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .head p {
+        font-size: 16px;
+    }
+
+    .head img {
+        height: 100%;
+        width: auto;
+        border-radius: 20px 0 0 20px;
+        max-height: 425px;
+    }
+
+    .head span {
+        margin-left: 35px;
+    }
+
+    .head>div:first-child {
+        min-width: 340px;
+    }
+
+    .head:after,
+    .description:after {
+        display: none;
+    }
+
+    .description {
+        flex-wrap: wrap;
+        padding: 30px;
+        justify-content: space-between;
+        row-gap: 70px;
+    }
+
+    .description div:first-child {
+        width: 100%;
+        max-width: 214px;
+    }
+
+    .description div:nth-child(2) {
+        width: 100%;
+        max-width: 445px;
+    }
+
+    .description div:last-child {
+        margin: 0;
+        max-width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .description h2 {
+        margin: 0;
+        margin-right: 110px;
+    }
+
+    .benefits {
+        padding: 0 40px;
+        flex-wrap: wrap;
+        row-gap: 72px;
+    }
+
+    .benefits>div {
+        width: calc(50% - 15px);
+    }
 }
